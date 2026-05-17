@@ -7,7 +7,7 @@ Plantilla is published by JC Mobile App Studio LLC ("we", "us", "the company"). 
 
 This Notice applies to the Plantilla iOS app distributed through the Apple App Store. It does not apply to other apps, websites, or services that may be linked from within Plantilla.
 
-For questions about this Notice, contact jcmappstudio@gmail.com.
+For questions about this Notice, contact contact@jcmobileappstudio.com.
 
 ## Summary
 
@@ -129,7 +129,7 @@ Depending on where you live, you may have specific rights under your local priva
 - **European Union and UK (GDPR/UK GDPR)**: right to access, rectify, erase, restrict, port, and object. Same notes as above: most of this is achievable through the app itself. To make a formal request, email us. The legal bases we rely on are consent (for AI features you opt into by using them) and legitimate interests (for rate-limiting abuse prevention).
 - **Other U.S. states with privacy laws** (Colorado, Connecticut, Virginia, Utah, Texas, Florida, Oregon, Montana, Tennessee, Indiana, Iowa, Delaware, New Hampshire, New Jersey, Maryland, Minnesota, Rhode Island, Kentucky, and others as enacted): similar rights apply and the same response paths work.
 
-To exercise rights or ask questions about how we handle data, email jcmappstudio@gmail.com. We respond within 30 days.
+To exercise rights or ask questions about how we handle data, email contact@jcmobileappstudio.com. We respond within 30 days.
 
 ## Security
 
@@ -160,7 +160,7 @@ For non-material changes (typo fixes, clarifications that do not change what we 
 ## Contact
 
 JC Mobile App Studio LLC
-Email: jcmappstudio@gmail.com
+Email: contact@jcmobileappstudio.com
 Website: www.jcmobileappstudio.com
 
 For privacy-specific inquiries, please use the subject line "Plantilla Privacy" so we route the message correctly.

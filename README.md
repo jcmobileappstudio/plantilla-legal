@@ -25,4 +25,4 @@ For material changes (anything that changes what data we collect, how we use it,
 
 ## Contact
 
-jcmappstudio@gmail.com
+contact@jcmobileappstudio.com
