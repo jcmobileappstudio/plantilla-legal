@@ -1,7 +1,7 @@
 # Plantilla Privacy Notice
 
-**Last updated: May 17, 2026**
-**Effective date: May 17, 2026**
+**Last updated: May 25, 2026**
+**Effective date: May 25, 2026**
 
 Plantilla is published by JC Mobile App Studio LLC ("we", "us", "the company"). This Privacy Notice explains what information the Plantilla iOS app collects, how it is used, and the choices you have. Plantilla is designed around a simple principle: your data stays on your device unless you explicitly choose to use a feature that requires sending it elsewhere.
 
@@ -18,6 +18,23 @@ For people who want the quick version:
 - **What we never collect**: your Social Security number, bank account numbers, credit card numbers, biometric data, advertising identifiers, your contacts, your location, your photo library outside of pictures you explicitly upload to a scanner, or browsing activity outside the app.
 - **We do not show ads, we do not sell your information, and we do not use your information to train AI models.**
 - **You can delete everything at any time** by deleting the app or by using the in-app delete controls described below.
+- **You will see a one-tap consent screen the first time you use any AI feature.** No question, OCR text, or other data leaves your phone for any AI feature until you explicitly tap "Allow AI features" on that screen. You can revoke this consent at any time in Settings, Privacy and Data, by turning off the "AI features" toggle. When AI is off, the AI features will not work, but everything else in Plantilla keeps working.
+
+## Explicit consent for AI features
+
+Plantilla will NOT send any of your data to a third-party AI service unless you have explicitly granted consent inside the app.
+
+The first time you tap "Ask Plantilla," scan a W-2 for AI assistance, use the HR Letter Translator, or upload a benefits document for AI Q&A, Plantilla will present a one-screen disclosure that:
+
+- Names every category of data that will be sent (your question, OCR text from documents, your selected language, your work state)
+- Identifies who receives the data (our Cloudflare Worker proxy operated by JC Mobile App Studio LLC, then Anthropic PBC's Claude API)
+- Confirms what we and Anthropic do NOT do (no storage on our server, no training on your content, no user account or identifier tied to your messages)
+- Links to this full privacy notice
+- Offers two equally prominent buttons: "Allow AI features" or "Don't allow"
+
+If you tap "Don't allow," the AI features remain disabled and no data is sent. You can change your mind at any time by opening Settings, Privacy and Data, and turning the "AI features" toggle on or off.
+
+This consent flow is shown before any AI request leaves your device, including all of: Ask Plantilla, the W-2 AI parser, the HR Letter Translator, and the Benefits Document AI.
 
 ## Who can use Plantilla
 
@@ -37,7 +54,7 @@ The W-2 scanner and direct deposit scanner work the same way at the OCR layer.
 
 After the on-device OCR runs, Plantilla offers to send the recognized text to our proxy server so an AI model can identify the boxes more accurately. The proxy is operated by us at a Cloudflare Worker endpoint. The proxy forwards the text to Anthropic's Claude API and returns a structured JSON response. The proxy strips any Social Security numbers from the response before returning it. We do not log the request body, we do not retain the text, and the response is not stored on the server. Anthropic processes the request under their own enterprise data terms and does not use the content to train models.
 
-Sending the text to the proxy is automatic when you scan a W-2. You can avoid this entirely by not using the W-2 scanner.
+Sending the text to the proxy is automatic when you scan a W-2 AFTER you have granted AI consent. You can avoid this entirely by not using the W-2 scanner or by declining AI consent.
 
 ### HR letter translator
 
@@ -46,6 +63,8 @@ You take a photo of an HR letter. Apple Vision OCRs it on device, then the recog
 ### Ask Plantilla AI assistant
 
 When you type or speak a question to the AI assistant, your question, your selected language, and your selected work state (a two-letter state code) are sent to our proxy. The proxy forwards to Claude and returns an answer. The question is not stored. Your assistant chat history is kept only on your device.
+
+Before any of this happens, the first time you tap to send a question, Plantilla presents the AI consent screen described in the "Explicit consent for AI features" section above. The question only leaves your device after you have tapped "Allow AI features" on that screen. You can revoke the consent at any time in Settings, Privacy and Data.
 
 ### Benefits document AI
 
